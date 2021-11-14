@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#root {
+    background-color: black;
+}
+.App {
+    display: flex;
+    margin: 10px auto;
+    width: 800px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.post {
+    display: flex;
+    padding: 15px;
+    background: #343A40;
+    color: white;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: Roboto;
+    border-radius: 6px;
+}
+
