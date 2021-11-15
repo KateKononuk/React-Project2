@@ -10,10 +10,10 @@ const NavBar = () => {
         <div>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                <Navbar.Brand href="#home">ReactApp</Navbar.Brand>
+                <Navbar.Brand href="/">ReactApp</Navbar.Brand>
                 <Nav className="me-auto">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href='/profile'>Profile </Nav.Link>
+                <Nav.Link href='/profile'>Profile</Nav.Link>
                 </Nav>
                 </Container>
             </Navbar>

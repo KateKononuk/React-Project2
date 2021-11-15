@@ -9,17 +9,20 @@ const MainComponent = () => {
     const [posts, setPosts] = useState([])
 
     const createPost = (newPost) => {
+    
       setPosts([newPost, ...posts])
       console.log(newPost)
       postContent(newPost)
     }
-  
+
     async function postContent(newPost) {
+      try{
       await axios.post("https://micro-blogging-dot-full-stack-course-services.ew.r.appspot.com/tweet", newPost)
-  
-    }
-  
-  
+      } catch (err){
+        alert(err)
+      }
+  }
+
     useEffect(() => {
       fetchPost()
     }, [])

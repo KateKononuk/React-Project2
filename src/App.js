@@ -5,11 +5,11 @@ import NavBar from "./Components/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { AuthProvider } from "./Contexts/AuthContext";
 import Profile from "./Components/Profile";
-import Account from "./Components/Account";
+import Account from './Components/Account'
 import PrivateRoute from './Components/PrivateRoute'
 import Signup from './Components/Signup';
 import Login from './Components/Login'
-import ResetPasswordssword from "./Components/ResetPassword";
+import ResetPassword from "./Components/ResetPassword";
 import { Container } from "react-bootstrap";
 
 
@@ -30,7 +30,7 @@ function App() {
               <PrivateRoute path="/update-profile" component={Profile} />
               <Route  path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
-              <Route path="/forgot-password" component={ResetPasswordssword} />
+              <Route path="/forgot-password" component={ResetPassword} />
             </Switch>
           </AuthProvider>
         </Router>

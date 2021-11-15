@@ -23,10 +23,8 @@ const PostItem = (props) => {
                      {props.post.userName} </h3>
                     <p>{props.post.date}</p>
                 </div>
-                <div style={styles.content}><h1> {props.post.content} </h1></div>
+                <div style={styles.content}><h5> {props.post.content} </h5></div>
                 <div className='post__btns'>
-     
-     
                 </div>
             </div>         
         </div>
